@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVVM</title>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div>{{msg}}</div>
+        <div>{{obj.msg}}</div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    <script>
+        const vm = new Mvvm({
+            el:'#app',
+            data:{
+                obj:{
+                    msg:'我是obj的msg'
+                },
+                msg:'我是msg'
+            }
+        })
+    </script>
+</body>
+</html>
