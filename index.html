@@ -11,6 +11,7 @@
     <div id="app">
         <div>{{msg}}</div>
         <div>{{obj.msg}}</div>
+        <p v-html="obj.htmlStr"></p>
         <ul>
             <li>1</li>
             <li>2</li>
@@ -24,7 +25,8 @@
                 obj:{
                     msg:'我是obj的msg'
                 },
-                msg:'我是msg'
+                msg:'我是msg',
+                htmlStr:'<div>我是html片段</div>'
             }
         })
     </script>
